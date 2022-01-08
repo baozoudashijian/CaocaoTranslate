@@ -1,0 +1,35 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/language/language"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "曹操翻译",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color":"#333",    
+    "selectedColor": "#1493d8", 
+    "backgroundColor":"#fff", 
+    "position":"bottom",  
+    "list": [
+      {
+        "pagePath": "pages/index/index",  
+        "text": "翻译",
+        "selectedIconPath": "static/images/translate_active.png",
+        "iconPath": "static/images/translate.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "历史",
+        "selectedIconPath": "static/images/log_active.png",
+        "iconPath": "static/images/log.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

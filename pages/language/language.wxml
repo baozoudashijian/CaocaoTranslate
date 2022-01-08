@@ -1,0 +1,14 @@
+<!--languages.wxml-->
+<view class="container language-list">
+<view class="language-container">
+  <view class="tanslate-language">
+    <text>翻译成</text>
+  </view>
+  <block wx:for="{{languages}}" wx:key="key" wx:for-item="language">
+    <view class="language-item" data-language='{{language}}' bindtap="selectLanguage">
+      <text class="language-item-key">{{language.key}}</text>
+      <image wx:if="{{language.value === dataLanguage.value}}" src="../../static/images/right.png"></image>
+    </view>
+  </block>
+</view>
+</view>

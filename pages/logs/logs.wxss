@@ -1,0 +1,27 @@
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+.tanslate-log {
+  color: #8995a1;
+}
+.log-item {
+  display: flex;
+  flex-direction: column;
+  margin: 10rpx;
+  padding: 10rpx;
+  border: 1px dotted #c7cee0;
+}
+.log-item:nth-child(1) {
+  margin-top: 20rpx;
+}
+.log-item .log-item-key {
+  color: #8995a1;
+  font-size: 14px;
+}
+.log-item .log-item-value {
+  color: #1a191e;
+  font-size: 18px;
+  margin-top: 10rpx;
+}

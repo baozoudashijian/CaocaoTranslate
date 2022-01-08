@@ -1,0 +1,73 @@
+.select-language {
+  display: flex;
+  align-items: center;
+  padding: 20rpx;
+  height: 40rpx;
+  font-size: 12px;
+  color: #8792a2;
+}
+.select-language > image {
+  width: 30rpx;
+  height: 30rpx;
+  margin-top: 10rpx;
+}
+.main {
+  width: 100%;
+  margin: 0 auto;
+}
+.line {
+  width: 100%;
+  height: 1rpx;
+  background-color: #c7cee0;
+}
+.main .input {
+  padding: 20rpx;
+  background-color: white;
+  position: relative;
+}
+.main .input > textarea {
+  height: 150rpx;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+.main .input .del {
+  position: absolute;
+  right: 14rpx;
+  top: 10rpx;
+  width: 20rpx;
+  height: 20rpx;
+  z-index: 999;
+}
+.main .input .del > image {
+  width: 100%;
+  height: 100%;
+}
+.main .result {
+  display: flex;
+  flex-direction: column;
+  height: 120rpx;
+  padding: 20rpx;
+  background-color: white;
+}
+.main .result .title {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #8795a1;
+}
+.main .result .title > image {
+  width: 40rpx;
+  height: 40rpx;
+}
+.main .result .content {
+  flex-grow: 1;
+}
+.footer {
+  position: absolute;
+  width: 100%;
+  bottom: 20rpx;
+  text-align: center;
+  color: #9a9999;
+  font-size: 14px;
+}

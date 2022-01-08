@@ -1,0 +1,12 @@
+<!--logs.wxml-->
+<view class="container">
+  <view class="tanslate-log log-list">
+    <text>翻译历史</text>
+  </view>
+  <block wx:for="{{logs}}" wx:key="key" wx:for-item="log">
+    <view class="log-item">
+      <text class="log-item-key">{{log.key}}</text>
+      <text class="log-item-value">{{log.value}}</text>
+    </view>
+  </block>
+</view>

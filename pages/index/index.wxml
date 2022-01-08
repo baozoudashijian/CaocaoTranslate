@@ -1,0 +1,40 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="select-language">
+    <block>
+      <text bindtap="toSelectLanguage">到{{language.key}}</text>
+      <image src="../../static/images/down.png"></image>
+    </block>
+  </view>
+  <view class="main">
+    <view class="input">
+      <textarea bindconfirm="translateHandler" value="{{text}}" placeholder="请输入要翻译的文本" bindinput="getTextareaValue" />
+      <view class="del" bindtap="delText">
+        <image src="../../static/images/delete.png"></image>
+      </view>
+    </view>
+  </view>
+  <view class="line"></view>
+  <view class="main">
+    <view class="result">
+      <view class="title"><image src="../../static/images/lakers.png"></image>译文</view>
+      <view class="content">{{result}}</view>
+    </view>
+  </view>
+  <view class="footer">
+    <text>©一个有理想但不太有趣的人</text>
+  </view>
+  
+    <!-- <block wx:elif="{{!hasUserInfo}}">
+      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
+      <button wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <view wx:else> 请使用1.4.4及以上版本基础库 </view>
+    </block>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block> -->
+  <!-- <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view> -->
+</view>
